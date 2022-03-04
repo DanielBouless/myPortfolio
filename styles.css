@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  flex-flow: row wrap;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  border-radius: 5px;
+  border: 5px black solid;
+  background-color: gold;
+}
+
+header p {
+  font-size: 30px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+header p.links {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  display: flex;
+}
