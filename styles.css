@@ -1,12 +1,15 @@
 header {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row;
+  justify-content: center;
   position: sticky;
   top: 0;
-  width: 100%;
+  width: auto;
   border-radius: 5px;
   border: 5px black solid;
   background-color: gold;
+  text-align-last: center;
+  z-index: 1;
 }
 
 header p {
@@ -23,11 +26,56 @@ header p.links {
   margin-bottom: 5px;
 }
 
-a:link {
+header a:link {
+  margin: 5px;
+  padding: 2px;
   text-decoration: none;
+  border: 2px black solid;
   color: black;
 }
 
-.container {
+div.container {
   display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+div.container-red {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: red;
+  border: 2px black solid;
+  border-radius: 5px;
+  height: 100%;
+  width: auto;
+  margin: auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+div.container-red p {
+  animation: scrolltext 20s infinite linear;
+  margin: auto;
+  color: white;
+}
+
+div.container-yellow {
+  display: flex;
+  flex-flow: wrap;
+  background-color: yellow;
+}
+
+@keyframes scrolltext {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
