@@ -173,7 +173,7 @@ footer div.container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: sticky;
   bottom: 0;
   width: 100%;
   height: fit-content;
